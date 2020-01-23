@@ -152,9 +152,9 @@ allprojects {
     task npmInstall(type: Exec) {
         workingDir DOCS_DIR
         if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
-            commandLine 'cmd', '/c', 'npm', 'i'
+            commandLine 'cmd', '/c', 'npm', 'ci'
         } else {
-            commandLine 'npm', 'i'
+            commandLine 'npm', 'ci'
         }
     }
 
